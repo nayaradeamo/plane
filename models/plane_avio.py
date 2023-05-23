@@ -5,4 +5,5 @@ class plane_avio(models.Model):
     imatge = fields.Image('imatge')
     marca = fields.Integer('marca')
     model = fields.Char('model')
-    maxvel = fields.Float('velocitat maxima')
+    max_vel = fields.Float('velocitat maxima')
+    avio_vol = fields.One2many('plane.avio','plane.vol',string='avio_vol')

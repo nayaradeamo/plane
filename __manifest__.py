@@ -3,7 +3,7 @@
     'summary' : "Short subtitle phrase",
     'description': """Long description""",
     'author' : " nayara de amo",
-    'license' : "APGPL-3",
+    'license': "AGPL-3",
     'website' : "http://www.institutmontilivi.cat",
     'category': "uncategorized",
     'version': '11.0.1.0.0',

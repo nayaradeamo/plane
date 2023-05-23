@@ -8,3 +8,6 @@ class plane_aeroport(models.Model):
     pais = fields.Char('pais')
     latitud = fields.Float('latitud')
     longitud = fields.Float('longitud')
+    aeroport_vol = fields.One2many('plane.aeroport','plane.vol',string='desti')
+    aeroport_vol2 = fields.One2many('plane.aeroport','plane.vol',string='origen')
+    

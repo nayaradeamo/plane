@@ -51,7 +51,7 @@
 		<field name="arch" type="xml">
 			<tree string="vol">
 				<field name="codi"/>
-				<field name="passatger"/>
+				<field name="passatgers"/>
 				<field name="data_sortida"/>		
                 <field name="data_arrivada"/>			
 			</tree>
@@ -90,5 +90,90 @@
 		</field>
 	</record>
 
+	<record model="ir.ui.view" id="view_xativa_persona_form">
+			<field name="name">plane_aeroport</field>
+			<field name="model">plane.aeroport</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="aeroport">
+					<sheet>
+						<group col="12" string="Dades identificatives">
+							<group colspan="4">
+								<field name="codi" />
+								<field name="nom" />
+								<field name="imatge" />
+								<field name="ciutat" />
+								<field name="pais" />
+								<field name="latitud" />
+								<field name="longitud" />
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+			<record model="ir.ui.view" id="view_xativa_persona_form">
+			<field name="name">plane_vol</field>
+			<field name="model">plane.vol</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="vol">
+					<sheet>
+						<group col="12" string="Dades identificatives">
+							<group colspan="4">
+								<field name="codi" />
+								<field name="passatgers" />
+								<field name="datasortida" />
+								<field name="dataarrivada" />
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+	<record model="ir.ui.view" id="view_xativa_persona_form">
+			<field name="name">plane_avio</field>
+			<field name="model">plane.avio</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="avio">
+					<sheet>
+						<group col="12" string="Dades identificatives">
+							<group colspan="4">
+								<field name="codi" />
+								<field name="imatge" />
+								<field name="marca" />
+								<field name="model" />
+								<field name="max_vel" />
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>	
+
+	<record model="ir.ui.view" id="view_xativa_persona_form">
+			<field name="name">plane_pilot</field>
+			<field name="model">plane.pilot</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="pilot">
+					<sheet>
+						<group col="12" string="Dades identificatives">
+							<group colspan="4">
+								<field name="codi" />
+								<field name="nom" />
+								<field name="cognoms" />
+								<field name="nif" />
+								<field name="telf" />
+								<field name="email" />
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>	
 	</data>
 </odoo>
